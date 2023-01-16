@@ -12,6 +12,7 @@ function SearchForm() {
     if (!username) return;
     router.push(`?username=${username}`);
     router.refresh();
+    setUsername('');
   };
 
   return (
@@ -26,7 +27,7 @@ function SearchForm() {
         />
         <button
           type='submit'
-          className='absolute right-2 top-1/2 z-10 -translate-y-1/2 transform rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold'
+          className='absolute right-2 top-1/2 z-10 -translate-y-1/2 transform rounded-lg bg-indigo-500 px-5 py-2.5 text-sm font-semibold transition-colors duration-100 ease-linear hover:bg-indigo-600'
         >
           Search
         </button>

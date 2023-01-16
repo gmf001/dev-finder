@@ -1,8 +1,10 @@
+import Link from 'next/link';
+
 function PageHeading() {
   return (
-    <div>
-      <h1 className='text-xl font-extrabold'>DevFinder</h1>
-    </div>
+    <Link href={'/'} className='text-xl font-extrabold'>
+      DevFinder
+    </Link>
   );
 }
 
