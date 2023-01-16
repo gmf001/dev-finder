@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    domains: ['placehold.co']
+    domains: ['avatars.githubusercontent.com']
   }
 };
 
