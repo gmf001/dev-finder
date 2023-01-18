@@ -9,7 +9,7 @@ const github = async (username: string) => {
     }
   });
   if (!res.ok) {
-    return;
+    return null;
     // throw new Error('Failed to fetch data');
   }
   const userData = await res.json();
