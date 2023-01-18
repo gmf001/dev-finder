@@ -17,6 +17,7 @@ interface Props {
 }
 export default async function Home({ searchParams }: Props) {
   const userData = await getData(searchParams.username);
+  console.log('data', userData);
 
   return (
     <main className='grid h-screen place-items-center'>
