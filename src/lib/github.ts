@@ -1,6 +1,7 @@
 import type { GithubUser } from '@/types';
 
 const github = async (username: string) => {
+  console.log('token', process.env.GITHUB_AUTH_TOKEN);
   const res = await fetch(`https://api.github.com/users/${username}`, {
     headers: {
       Accept: 'application/vnd.github.v3+json',
